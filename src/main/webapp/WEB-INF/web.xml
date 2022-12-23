@@ -1,0 +1,46 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+  <display-name>Archetype Created Web Application</display-name>
+
+  <filter>
+    <filter-name>LogFilter</filter-name>
+    <filter-class>com.my.LogFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LogFilter</filter-name>
+    <url-pattern>/ticketsPage</url-pattern>
+    <url-pattern>/allPath</url-pattern>
+    <url-pattern>/allPathA</url-pattern>
+    <url-pattern>/TicketInfo</url-pattern>
+    <url-pattern>/addTrain</url-pattern>
+    <url-pattern>/PaymentVerification</url-pattern>
+    <url-pattern>/ConfirmTicket</url-pattern>
+    <url-pattern>/changeLanguage</url-pattern>
+    <url-pattern>/buyTicket2</url-pattern>
+    <url-pattern>/buyTicket</url-pattern>
+  </filter-mapping>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/WEB-INF/error404.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/WEB-INF/error500.jsp</location>
+  </error-page>
+
+
+
+
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
